@@ -1,0 +1,141 @@
+body{
+ margin: 0;
+ font-family: Arial, Helvetica, sans-serif;
+overflow: hidden;
+background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)), url(elemental-images/bg.jpg);
+background-size: cover;
+
+}
+
+h1 {
+
+  font-size: 50px;
+  position: absolute;
+  top: 8%;
+  left: 35%;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-box-reflect: below 1px linear-gradient(transparent , #0008);
+  line-height: 0.65em;
+  outline: none;
+  animation : snakeonchain 10s linear infinite;
+}
+
+@keyframes snakeonchain 
+{
+   
+   0%,18%,20%,50.1%,60%,80%,90.1%{
+      color: #1b03a3;
+      text-shadow: none;
+   }
+    18.1%,20% ,30%,50%,65%,74%,86%,100%{
+      color: white;
+     text-shadow: 0 0 10px #04d9ff ,
+     0 0 20px #FF10F0 ,
+     0 0 40px #04d9ff ,
+     0 0 60px #04d9ff ,
+     0 0 180px #FF10F0 ,
+     0 0 240px #FF10F0 
+   }
+  
+}
+
+
+
+
+
+
+
+button {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  padding: 15px;
+  font-family: monospace;
+  background-color: transparent;
+  border-radius: 3px;
+  font-size: 15px;
+  cursor: pointer;
+  border: solid 4px #04d9ff;
+  color: #04d9ff
+}
+
+button:hover{
+  border-color: white;
+  color: white;
+  font-weight: bold;
+  transition: 0.5s;
+  box-shadow: 5px 5px 40px 8px #04d9ff;
+  background-color: rgba(4,217,255, 0.6);
+}
+
+button:active{
+  border-color:  white;
+  color:  white;
+  font-weight: bolder;
+  transition: 0.2s;
+  box-shadow: 5px 5px 40px 8px  #cfff04;
+  background-color: rgba(207,255,4,0.5);
+}
+
+
+.grid {
+ display: flex;
+ flex-wrap: wrap;
+ position: absolute;
+ top: 55%;
+ left: 35%;
+ transform: translateY(-30%);
+  height: 400px;
+  width: 400px;
+border: solid 7px #04d9ff;
+border-radius: 4px;
+box-shadow: 1px 1px 50px #04d9ff;
+}
+
+.scr-txt {
+  color: #04d9ff;
+  font-size: 15px;
+ background-color: white;
+  background-color: transparent;
+  border: solid 2px white;
+  padding: 3px 20px;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.square  {
+  width: 40px;
+ height: 40px;
+
+}
+
+.snake {
+  background-color:rgba(255, 49, 49,0.7);
+  box-shadow: 2px 2px 5px #000000;
+}
+
+.apple {
+  background-color: green;
+ /* background-image: url('images/apple.png');
+  height: 20px;
+  width: 20px; */
+} 
+
+.warning-msg {
+  background-color: greenyellow;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  max-width: 1000px;
+  color: black;
+  font-weight: 600;
+  font-family: cursive;
+  padding: 3px 20px;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
